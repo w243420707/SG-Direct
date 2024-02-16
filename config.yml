@@ -19,7 +19,7 @@ Nodes:
     ApiConfig:
       ApiHost: "https://shiyuanyinian.xyz"
       ApiKey: "yE4ZvHiqQQHdYPdv"
-      NodeID: 100
+      NodeID: 101
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
@@ -51,7 +51,7 @@ Nodes:
     ApiConfig:
       ApiHost: "https://flywhaler.com"
       ApiKey: "yE4ZvHiqQQHdYPdv"
-      NodeID: 93
+      NodeID: 94
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type

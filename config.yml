@@ -39,7 +39,7 @@ Nodes:
         Limit: 60 
         WarnTimes: 1 
         LimitSpeed: 50 
-        LimitDuration: 5 
+        LimitDuration: 60 
       FallBackConfigs:  # Support multiple fallbacks
         - SNI: # TLS SNI(Server Name Indication), Empty for any
           Alpn: # Alpn, Empty for any

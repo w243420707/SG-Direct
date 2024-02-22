@@ -23,7 +23,7 @@ Nodes:
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
-      SpeedLimit: 50 # Mbps, Local settings will replace remote settings, 0 means disable
+      SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
       DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
       RuleListPath: # /etc/XrayR/rulelist Path to local rulelist file
       DisableCustomConfig: false # disable custom config for sspanel
@@ -35,6 +35,11 @@ Nodes:
       DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       EnableFallback: false # Only support for Trojan and Vless
+      AutoSpeedLimitConfig:
+        Limit: 500 
+        WarnTimes: 1 
+        LimitSpeed: 50 
+        LimitDuration: 10 
       FallBackConfigs:  # Support multiple fallbacks
         - SNI: # TLS SNI(Server Name Indication), Empty for any
           Alpn: # Alpn, Empty for any

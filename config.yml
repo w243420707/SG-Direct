@@ -36,10 +36,10 @@ Nodes:
       EnableProxyProtocol: false # Only works for WebSocket and TCP
       EnableFallback: false # Only support for Trojan and Vless
       AutoSpeedLimitConfig:
-        Limit: 500 
-        WarnTimes: 1 
+        Limit: 60 
+        WarnTimes: 3 
         LimitSpeed: 50 
-        LimitDuration: 10 
+        LimitDuration: 5 
       FallBackConfigs:  # Support multiple fallbacks
         - SNI: # TLS SNI(Server Name Indication), Empty for any
           Alpn: # Alpn, Empty for any

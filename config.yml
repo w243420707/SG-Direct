@@ -42,10 +42,15 @@ Nodes:
           Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/features/fallback.html for details.
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
-        CertMode: file # Option about how to get certificate: none, file, http, tls, dns. Choose "none" will forcedly disable the tls config.
-        CertDomain: "SG1-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
-        CertFile: /home/ssl/SG1-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz/1.pem # Provided if the CertMode is file
-        KeyFile: /home/ssl/SG1-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz/1.key
+        CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
+        CertDomain: "SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
+        CertFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
+        KeyFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.key
+        Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
+        Email: yooyu@msn.com
+        DNSEnv: # DNS ENV option used by DNS provider
+          CLOUDFLARE_EMAIL: yooyu@msn.com
+          CLOUDFLARE_API_KEY: e80a9bfb256d5d060aa8a4f55a7da43fdf135
 # -------------------------------------------------------
   - PanelType: "NewV2board" # Panel type: SSpanel, NewV2board, PMpanel, Proxypanel, V2RaySocks, GoV2Panel
     ApiConfig:
@@ -74,7 +79,87 @@ Nodes:
           Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/features/fallback.html for details.
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
-        CertMode: file # Option about how to get certificate: none, file, http, tls, dns. Choose "none" will forcedly disable the tls config.
-        CertDomain: "SG1-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
-        CertFile: /home/ssl/SG1-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz/1.pem # Provided if the CertMode is file
-        KeyFile: /home/ssl/SG1-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz/1.key
+        CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
+        CertDomain: "SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
+        CertFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
+        KeyFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.key
+        Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
+        Email: yooyu@msn.com
+        DNSEnv: # DNS ENV option used by DNS provider
+          CLOUDFLARE_EMAIL: yooyu@msn.com
+          CLOUDFLARE_API_KEY: e80a9bfb256d5d060aa8a4f55a7da43fdf135
+
+# -------------------------------------------------------
+  - PanelType: "NewV2board" # Panel type: SSpanel, NewV2board, PMpanel, Proxypanel, V2RaySocks, GoV2Panel
+    ApiConfig:
+      ApiHost: "https://backup.passwalls.com"
+      ApiKey: "yE4ZvHiqQQHdYPdv"
+      NodeID: 9
+      NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
+      Timeout: 30 # Timeout for the api request
+      EnableVless: false # Enable Vless for V2ray Type
+      SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
+      DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
+      RuleListPath: # /etc/XrayR/rulelist Path to local rulelist file
+      DisableCustomConfig: false # disable custom config for sspanel
+    ControllerConfig:
+      ListenIP: 0.0.0.0 # IP address you want to listen
+      SendIP: 0.0.0.0 # IP address you want to send pacakage
+      UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
+      EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
+      DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
+      EnableProxyProtocol: false # Only works for WebSocket and TCP
+      EnableFallback: false # Only support for Trojan and Vless
+      FallBackConfigs:  # Support multiple fallbacks
+        - SNI: # TLS SNI(Server Name Indication), Empty for any
+          Alpn: # Alpn, Empty for any
+          Path: # HTTP PATH, Empty for any
+          Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/features/fallback.html for details.
+          ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
+      CertConfig:
+        CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
+        CertDomain: "SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
+        CertFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
+        KeyFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.key
+        Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
+        Email: yooyu@msn.com
+        DNSEnv: # DNS ENV option used by DNS provider
+          CLOUDFLARE_EMAIL: yooyu@msn.com
+          CLOUDFLARE_API_KEY: e80a9bfb256d5d060aa8a4f55a7da43fdf135
+# -------------------------------------------------------
+  - PanelType: "NewV2board" # Panel type: SSpanel, NewV2board, PMpanel, Proxypanel, V2RaySocks, GoV2Panel
+    ApiConfig:
+      ApiHost: "https://main.passwalls.com"
+      ApiKey: "yE4ZvHiqQQHdYPdv"
+      NodeID: 12
+      NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
+      Timeout: 30 # Timeout for the api request
+      EnableVless: false # Enable Vless for V2ray Type
+      SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
+      DeviceLimit: 0 # Local settings will replace remote settings, 0 means disable
+      RuleListPath: # /etc/XrayR/rulelist Path to local rulelist file
+      DisableCustomConfig: false # disable custom config for sspanel
+    ControllerConfig:
+      ListenIP: 0.0.0.0 # IP address you want to listen
+      SendIP: 0.0.0.0 # IP address you want to send pacakage
+      UpdatePeriodic: 60 # Time to update the nodeinfo, how many sec.
+      EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
+      DNSType: AsIs # AsIs, UseIP, UseIPv4, UseIPv6, DNS strategy
+      EnableProxyProtocol: false # Only works for WebSocket and TCP
+      EnableFallback: false # Only support for Trojan and Vless
+      FallBackConfigs:  # Support multiple fallbacks
+        - SNI: # TLS SNI(Server Name Indication), Empty for any
+          Alpn: # Alpn, Empty for any
+          Path: # HTTP PATH, Empty for any
+          Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/features/fallback.html for details.
+          ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
+      CertConfig:
+        CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
+        CertDomain: "SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
+        CertFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
+        KeyFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.key
+        Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
+        Email: yooyu@msn.com
+        DNSEnv: # DNS ENV option used by DNS provider
+          CLOUDFLARE_EMAIL: yooyu@msn.com
+          CLOUDFLARE_API_KEY: e80a9bfb256d5d060aa8a4f55a7da43fdf135

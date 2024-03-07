@@ -43,9 +43,9 @@ Nodes:
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
         CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
-        CertDomain: "SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
-        CertFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
-        KeyFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.key
+        CertDomain: "SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz" # Domain to cert
+        CertFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
+        KeyFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.key
         Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
         Email: yooyu@msn.com
         DNSEnv: # DNS ENV option used by DNS provider
@@ -80,9 +80,9 @@ Nodes:
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
         CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
-        CertDomain: "SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
-        CertFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
-        KeyFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.key
+        CertDomain: "SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz" # Domain to cert
+        CertFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
+        KeyFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.key
         Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
         Email: yooyu@msn.com
         DNSEnv: # DNS ENV option used by DNS provider
@@ -118,9 +118,9 @@ Nodes:
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
         CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
-        CertDomain: "SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
-        CertFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
-        KeyFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.key
+        CertDomain: "SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz" # Domain to cert
+        CertFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
+        KeyFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.key
         Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
         Email: yooyu@msn.com
         DNSEnv: # DNS ENV option used by DNS provider
@@ -155,9 +155,9 @@ Nodes:
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
         CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
-        CertDomain: "SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz" # Domain to cert
-        CertFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
-        KeyFile: /etc/XrayR/cert/SG2-Direct-Uuw5tkPYXwxSlzJG.fly64jfgwhale.xyz.key
+        CertDomain: "SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz" # Domain to cert
+        CertFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
+        KeyFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.key
         Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
         Email: yooyu@msn.com
         DNSEnv: # DNS ENV option used by DNS provider

@@ -19,8 +19,8 @@ Nodes:
     ApiConfig:
       ApiHost: "https://shiyuanyinian.xyz"
       ApiKey: "yE4ZvHiqQQHdYPdv"
-      NodeID: 101
-      NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
+      NodeID: 1
+      NodeType: Shadowsocks # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
@@ -42,7 +42,7 @@ Nodes:
           Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/features/fallback.html for details.
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
-        CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
+        CertMode: none # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
         CertDomain: "SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz" # Domain to cert
         CertFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
         KeyFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.key
@@ -56,8 +56,8 @@ Nodes:
     ApiConfig:
       ApiHost: "https://flywhaler.com"
       ApiKey: "yE4ZvHiqQQHdYPdv"
-      NodeID: 94
-      NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
+      NodeID: 359
+      NodeType: Shadowsocks # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
@@ -79,7 +79,7 @@ Nodes:
           Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/features/fallback.html for details.
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
-        CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
+        CertMode: none # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
         CertDomain: "SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz" # Domain to cert
         CertFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
         KeyFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.key
@@ -94,8 +94,8 @@ Nodes:
     ApiConfig:
       ApiHost: "https://backup.passwalls.com"
       ApiKey: "yE4ZvHiqQQHdYPdv"
-      NodeID: 9
-      NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
+      NodeID: 1
+      NodeType: Shadowsocks # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
@@ -117,7 +117,7 @@ Nodes:
           Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/features/fallback.html for details.
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
-        CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
+        CertMode: none # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
         CertDomain: "SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz" # Domain to cert
         CertFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
         KeyFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.key
@@ -131,8 +131,8 @@ Nodes:
     ApiConfig:
       ApiHost: "https://main.passwalls.com"
       ApiKey: "yE4ZvHiqQQHdYPdv"
-      NodeID: 12
-      NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
+      NodeID: 1
+      NodeType: Shadowsocks # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
       SpeedLimit: 0 # Mbps, Local settings will replace remote settings, 0 means disable
@@ -154,7 +154,7 @@ Nodes:
           Dest: 80 # Required, Destination of fallback, check https://xtls.github.io/config/features/fallback.html for details.
           ProxyProtocolVer: 0 # Send PROXY protocol version, 0 for disable
       CertConfig:
-        CertMode: dns # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
+        CertMode: none # Option about how to get certificate: none, file, http, dns. Choose "none" will forcedly disable the tls config.
         CertDomain: "SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz" # Domain to cert
         CertFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.cert # Provided if the CertMode is file
         KeyFile: /etc/XrayR/cert/SG2-Direct-4osl8f2wic9k0xa6ryjzmv1phq7dn5.fly64jfgwhale.xyz.key
